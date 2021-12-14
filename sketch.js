@@ -9,7 +9,7 @@ var grupoDeNuvens, imagemDaNuvem;
 var grupodeobstaculos, obstaculo1, obstaculo2, obstaculo3, obstaculo4, obstaculo5, obstaculo6;
 
 var pontuacao=0;
-
+var feito_por_fabricio;
 var fimDeJogo, reiniciar;
 
 
@@ -72,6 +72,7 @@ function draw() {
   //trex.debug = true;
   background(255);
   text("Pontuação: "+ pontuacao, 500,50);
+  text("feito_por_fabricio",200,50);
   
   if (estadoJogo === JOGAR){
     pontuacao = pontuacao + Math.round(getFrameRate()/60);
